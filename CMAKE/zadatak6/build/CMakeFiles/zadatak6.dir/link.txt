@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/zadatak6.dir/src/main.cpp.o  -o zadatak6   -L/home/hus/Desktop/zadatak6/lib  -Wl,-rpath,/home/hus/Desktop/zadatak6/lib -lStudent -lProfessor 

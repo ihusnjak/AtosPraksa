@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Professor/Professor.h
+string
+-
+
+../include/Student/Student.h
+string
+-
+
+/home/hus/Desktop/zadatak6/src/main.cpp
+iostream
+-
+cstring
+-
+Professor/Professor.h
+/home/hus/Desktop/zadatak6/src/Professor/Professor.h
+Student/Student.h
+/home/hus/Desktop/zadatak6/src/Student/Student.h
+
