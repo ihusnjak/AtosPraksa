@@ -1,0 +1,3 @@
+/home/hus/Desktop/zadatak5/build/CMakeFiles/rebuild_cache.dir
+/home/hus/Desktop/zadatak5/build/CMakeFiles/edit_cache.dir
+/home/hus/Desktop/zadatak5/build/CMakeFiles/zadatak5.dir

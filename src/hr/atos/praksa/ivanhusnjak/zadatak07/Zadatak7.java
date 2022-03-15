@@ -6,38 +6,39 @@ public class Zadatak7 {
         int start = 0;
         int stop = 0;
         int counter = 0;
-        Scanner scanner = new Scanner(System.in);
-        boolean flag;
-        do {
-            System.out.println("Unesi poèetak intervala (prirodni broj):");
-            String unos = scanner.next();
-            try {
-                start = Integer.parseInt(unos);
-                if (start > 0) {
-                    flag = false;
-                } else {
-                    flag = true;
-                }
-            } catch (NumberFormatException e) {
-                System.out.println("Mora biti prirodni broj!");
-                flag = true;
-            }
-        } while (flag);
-        do {
-            System.out.println("Unesi kraj intervala (prirodni broj):");
-            String unos = scanner.next();
-            try {
-                stop = Integer.parseInt(unos);
-                if (start > 0) {
-                    flag = false;
-                } else {
-                    flag = true;
-                }
-            } catch (NumberFormatException e) {
-                System.out.println("Mora biti prirodni broj!");
-                flag = true;
-            }
-        } while (flag);
+        try (Scanner scanner = new Scanner(System.in)) {
+			boolean flag;
+			do {
+			    System.out.println("Unesi poèetak intervala (prirodni broj):");
+			    String unos = scanner.next();
+			    try {
+			        start = Integer.parseInt(unos);
+			        if (start > 0) {
+			            flag = false;
+			        } else {
+			            flag = true;
+			        }
+			    } catch (NumberFormatException e) {
+			        System.out.println("Mora biti prirodni broj!");
+			        flag = true;
+			    }
+			} while (flag);
+			do {
+			    System.out.println("Unesi kraj intervala (prirodni broj):");
+			    String unos = scanner.next();
+			    try {
+			        stop = Integer.parseInt(unos);
+			        if (start > 0) {
+			            flag = false;
+			        } else {
+			            flag = true;
+			        }
+			    } catch (NumberFormatException e) {
+			        System.out.println("Mora biti prirodni broj!");
+			        flag = true;
+			    }
+			} while (flag);
+		}
         if (start > stop) {
             int helper = start;
             start = stop;

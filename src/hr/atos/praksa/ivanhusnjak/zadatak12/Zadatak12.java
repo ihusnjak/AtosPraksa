@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class Zadatak12 {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("src/hr/atos/praksa/ivanhusnjak/zadatak12/rijeci.txt");
+        File file = new File("././src/hr/atos/praksa/ivanhusnjak/zadatak12/rijeci.txt");
         try (Scanner scanner = new Scanner(file)) {
             ArrayList<String> sveRijeci = new ArrayList<>();
             while (scanner.hasNext()) {

@@ -5,19 +5,23 @@ import java.util.ArrayList;
 
 public class Zadatak9 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int counter = 1;
-        ArrayList<Integer> racuni = new ArrayList<>();
-        ArrayList<Integer> racuniAprox = new ArrayList<>();
+        try (Scanner scanner = new Scanner(System.in)) {
+			int counter = 1;
+			ArrayList<Integer> racuni = new ArrayList<>();
+			ArrayList<Integer> racuniAprox = new ArrayList<>();
 
-        while (counter < 13) {
-            System.out.println("Unesi raèun za " + counter + ".mj:");
-            racuni.add(Integer.valueOf(scanner.nextLine()));
-            counter++;
-        }
+			while (counter < 13) {
+			    System.out.println("Unesi raèun za " + counter + ".mj:");
+			    racuni.add(Integer.valueOf(scanner.nextLine()));
+			    counter++;
+			}
 
-        zaokruziRacun(racuni, racuniAprox);
-        printGraf(racuniAprox);
+			zaokruziRacun(racuni, racuniAprox);
+			printGraf(racuniAprox);
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
     }
 

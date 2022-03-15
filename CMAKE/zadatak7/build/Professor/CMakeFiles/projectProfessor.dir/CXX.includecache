@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Professor/include/Professor/Professor.h
+string
+-
+
+/home/hus/Desktop/zadatak7/Professor/src/Professor.cpp
+iostream
+-
+cstring
+-
+Professor/Professor.h
+/home/hus/Desktop/zadatak7/Professor/src/Professor/Professor.h
+
